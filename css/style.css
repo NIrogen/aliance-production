@@ -7,15 +7,42 @@ body {
 }
 
 .navbar{
-  background-color: gray;
   display: flex;
   align-items: center;
   color: white;
   height: 94px;
+  position: relative;
+  border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+}
+
+.header {
+  min-height: 100vh;
+}
+
+.header-image{
+  background-image: url(../img/header-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+  position: relative;
+  
+}
+
+.header-image::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(41, 45, 51, 0.4);
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .header-logo{
   padding: 25px 50px;
+  border-right: 1px solid rgba(235, 235, 240, 0.2);
+  height: 100%;
 }
 
 .header-nav{
