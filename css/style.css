@@ -6,7 +6,12 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
-.navbar{
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.navbar {
   display: flex;
   align-items: center;
   color: white;
@@ -19,16 +24,15 @@ body {
   min-height: 100vh;
 }
 
-.header-image{
+.header-image {
   background-image: url(../img/header-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top right;
   position: relative;
-  
 }
 
-.header-image::before{
+.header-image::before {
   content: "";
   position: absolute;
   top: 0;
@@ -39,13 +43,13 @@ body {
   z-index: 0;
 }
 
-.header-logo{
+.header-logo {
   padding: 25px 50px;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
   height: 100%;
 }
 
-.header-nav{
+.header-nav {
   flex-basis: 100%;
   display: flex;
   list-style: none;
@@ -53,27 +57,27 @@ body {
   margin: 0;
 }
 
-.header-nav-link{
+.header-nav-link {
   text-decoration: none;
   font-size: 16px;
   margin-right: 50px;
   color: inherit;
 }
 
-.header-phone{
+.header-phone {
   flex-shrink: 0;
   display: flex;
   align-items: center;
   margin-right: 50px;
 }
 
-.header-phone-link{
+.header-phone-link {
   text-decoration: none;
   font-size: 16px;
   color: inherit;
 }
 
-.button{
+.button {
   font-weight: 600;
   font-size: 16px;
   line-height: 160%;
@@ -87,6 +91,27 @@ body {
   border: none;
   flex-shrink: 0;
 }
-.header-button{
+.header-button {
   height: 100%;
+}
+
+.seporator {
+  background-color: rgba(92, 142, 230, 1);
+  width: 150px;
+  height: 2px;
+}
+
+.header-content {
+  padding-top: 150px;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.header-title {
+  max-width: 1080px;
+}
+
+.header-text {
+  max-width: 720px;
 }
