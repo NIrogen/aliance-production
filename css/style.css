@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1440px;
   margin: auto;
 }
 
@@ -89,7 +89,12 @@ body {
   padding: 25px 60px;
   gap: 10px;
   border: none;
+  display: inline;
+  cursor: pointer;
+}
+.navbar-button {
   flex-shrink: 0;
+  height: 100%;
 }
 .header-button {
   height: 100%;
@@ -110,8 +115,43 @@ body {
 
 .header-title {
   max-width: 1080px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 96px;
 }
 
 .header-text {
   max-width: 720px;
+  margin-bottom: 50px;
+  font-family: "Noto Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.header-features {
+  display: flex;
+  min-height: 168px;
+  padding: 0;
+  margin-top: 100px;
+  list-style: none;
+  color: #fff;
+  position: relative;
+}
+
+.header-features-item {
+  padding: 30px 50px;
+  border: 1px solid rgba(235, 235, 240, 0.2);
+}
+
+.header-features-item:not(:last-child) {
+  border-right: none;
+}
+
+.header-featuress-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
 }
