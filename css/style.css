@@ -16,11 +16,16 @@ body {
   align-items: center;
   color: white;
   height: 94px;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
 }
 
 .header {
+  padding-top: 94px;
   min-height: 100vh;
 }
 
