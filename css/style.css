@@ -22,13 +22,13 @@ body {
   left: 0;
   z-index: 2;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, height 0.2s;
 }
 
 .navbar-light {
   color: rgba(41, 45, 51, 1);
   background-color: white;
-  border-bottom: none;
+  height: 74px;
 }
 
 .navbar-light .header-logo-path{
@@ -60,6 +60,8 @@ body {
 }
 
 .header-logo {
+  display: flex;
+  align-items: center;
   padding: 25px 50px;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
   height: 100%;
