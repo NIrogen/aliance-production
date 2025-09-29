@@ -28,6 +28,7 @@ body {
 .navbar-light {
   color: rgba(41, 45, 51, 1);
   background-color: white;
+  border-bottom: none;
 }
 
 .navbar-light .header-logo-path{
