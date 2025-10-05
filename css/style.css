@@ -566,9 +566,6 @@ body {
     padding: 1rem;
   }
   
-  .navbar {
-    height: 4rem;
-  }
   
   .mobile-menu {
     padding-top: 4rem;
@@ -594,8 +591,6 @@ body {
   }
   
   .button {
-    padding: 1.2rem 2rem;
-    width: 70px;
     text-align: center;
   }
 
