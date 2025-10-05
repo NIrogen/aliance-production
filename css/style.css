@@ -443,3 +443,186 @@ body {
     line-height: 160%;
   }
 }
+/* Планшеты 768px - 992px */
+@media (max-width: 992px) and (min-width: 769px) {
+  html {
+    font-size: 12.5px; /* Меньше уменьшаем */
+  }
+  
+  .header-title {
+    font-size: 4rem; /* Уменьшаем постепенно */
+  }
+  
+  .header-content {
+    padding-top: 6rem;
+  }
+  
+  .header-features {
+    flex-wrap: wrap; /* Разрешаем перенос */
+    margin-top: 3rem;
+  }
+  
+  .header-features-item {
+    flex: 1 1 50%; /* 2 колонки */
+    min-width: 50%;
+    padding: 1.5rem 1rem;
+  }
+  
+  .header-features-item:nth-child(2n) {
+    border-right: 1px solid rgba(235, 235, 240, 0.2);
+  }
+  
+  .header-features-item:nth-child(2n+1) {
+    border-right: none;
+  }
+}
+
+/* Большие телефоны 481px - 768px */
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  .logo-svg {
+    width: 100px;
+    height: auto;
+  }
+
+  .header-logo {
+    padding: 1rem;
+  }
+  
+  .header {
+    padding-top: 4rem;
+    min-height: auto;
+  }
+  
+  .header-content {
+    padding-top: 4rem;
+  }
+  
+  .header-title {
+    font-size: 3rem;
+    margin: 1rem 0;
+  }
+  
+  .header-text {
+    margin-bottom: 2rem;
+  }
+  
+  .header-features {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  
+  .header-features-item {
+    padding: 1rem;
+    border-right: 1px solid rgba(235, 235, 240, 0.2) !important;
+    border-bottom: none;
+  }
+  
+  .header-features-item:not(:last-child) {
+    border-bottom: none;
+  }
+  
+  .steps {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .steps-item {
+    max-width: 100%;
+  }
+  
+  .section {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  
+  /* Фиксим мобильное меню */
+  .mobile-menu-toggle {
+    width: 60px;
+    padding: 1rem;
+  }
+  
+  .navbar {
+    height: 4rem;
+  }
+  
+  .mobile-menu {
+    padding-top: 4rem;
+  }
+}
+
+/* Телефоны 320px - 480px */
+@media (max-width: 480px) {
+  html {
+    font-size: 11px;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+
+  .header-title {
+    font-size: 2.5rem;
+  }
+  
+  .header-content {
+    padding-top: 3rem;
+  }
+  
+  .button {
+    padding: 1.2rem 2rem;
+    width: 70px;
+    text-align: center;
+  }
+
+  
+  .navbar-button {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .mobile-menu-toggle {
+    width: 50px;
+    padding: 0.8rem;
+  }
+  
+  .mobile-menu {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .mobile-phone {
+    font-size: 18px;
+    padding-top: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+/* Очень маленькие телефоны */
+@media (max-width: 320px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+  
+  .mobile-menu {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
