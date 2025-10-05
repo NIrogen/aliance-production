@@ -358,6 +358,7 @@ body {
     height: 1px;
     background-color: white;
     width: 100%;
+    transition: transform 0.4s;
   }
   .mobile-menu-line:nth-child(2) {
     width: 80%;
@@ -441,6 +442,16 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 160%;
+  }
+  
+  .close-menu .mobile-menu-line:nth-child(2) {
+    display: none;
+  }
+  .close-menu .mobile-menu-line:nth-child(1) {
+    transform: rotate(45deg) translateY(16px);
+  }
+  .close-menu .mobile-menu-line:nth-child(3) {
+    transform: rotate(135deg) translateY(16px);
   }
 }
 /* Планшеты 768px - 992px */
