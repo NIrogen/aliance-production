@@ -225,6 +225,7 @@ body {
 .steps {
   display: flex;
   list-style: none;
+  width: 100%;
   padding: 0;
   gap: 1.875rem;
 }
@@ -495,7 +496,7 @@ body {
   }
   
   .container {
-    max-width: 100%;
+    max-width: 40rem;
     padding: 0 1.5rem;
   }
 
@@ -514,18 +515,17 @@ body {
   }
   
   .header-content {
-    padding-top: 4rem;
+    padding-top: 3rem;
   }
   
   .header-title {
-    font-size: 3rem;
-    margin: 1rem 0;
+    font-size: 4rem;
   }
   
   .header-text {
     margin-bottom: 2rem;
   }
-  
+  /*
   .header-features {
     flex-direction: column;
     margin-top: 2rem;
@@ -579,46 +579,18 @@ body {
   }
   
   .container {
-    padding: 0 1rem;
+    width: 90%;;
   }
 
   .header-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   
   .header-content {
     padding-top: 3rem;
   }
   
-  .button {
-    text-align: center;
-  }
-
   
-  .navbar-button {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  
-  .mobile-menu-toggle {
-    width: 50px;
-    padding: 0.8rem;
-  }
-  
-  .mobile-menu {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  
-  .mobile-phone {
-    font-size: 18px;
-    padding-top: 1.5rem;
-  }
-  
-  .section-title {
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
 }
 
 /* Очень маленькие телефоны */

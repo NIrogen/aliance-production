@@ -37,3 +37,8 @@ mMenuToggle.addEventListener("click", (event) => {
   event.preventDefault();
   menu.classList.contains("is-open") ? closeMenu() : openMenu();
 });
+
+const swiper = new Swiper('.swiper', {
+  speed: 400,
+  autoHeight: true,
+});
