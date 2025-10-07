@@ -323,6 +323,9 @@ body {
   .header-phone {
     margin-left: 2rem;
   }
+  .slider-buttons{
+    display: flex;
+  }
 }
 
 @media (max-width: 1306px) {
@@ -339,9 +342,7 @@ body {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  .slider-buttons{
-    display: flex;
-  }
+  
 }
 
 @media (max-width: 1057px) {
