@@ -246,6 +246,23 @@ body {
   gap: 1.875rem;
 }
 
+.steps-buttons{
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+  height: 40px;
+}
+
+.steps-button-next,.steps-button-prev{
+  background: #5c8ee6;
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
 .steps-item {
   max-width: 20.625rem;
 }
@@ -330,6 +347,7 @@ body {
   .slider-buttons{
     display: flex;
   }
+  
 }
 
 @media (max-width: 1306px) {
@@ -346,7 +364,9 @@ body {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  
+  .steps-buttons {
+    display: flex;
+  }
 }
 
 @media (max-width: 1057px) {
@@ -474,6 +494,7 @@ body {
   .close-menu .mobile-menu-line:nth-child(3) {
     transform: rotate(135deg) translateY(16px);
   }
+  
 }
 /* Планшеты 768px - 992px */
 @media (max-width: 992px) and (min-width: 769px) {
@@ -543,14 +564,6 @@ body {
   
   .header-text {
     margin-bottom: 2rem;
-  }
-  .steps {
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .steps-item {
-    max-width: 100%;
   }
   
   .section {
