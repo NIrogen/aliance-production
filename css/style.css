@@ -54,7 +54,7 @@ body {
   fill: rgba(41, 45, 51, 1);
 }
 
-.logo{
+.logo {
   display: none;
 }
 .logo-svg {
@@ -203,7 +203,7 @@ body {
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
 
-.slider-buttons{
+.slider-buttons {
   display: none;
   height: 44px;
 }
@@ -246,14 +246,15 @@ body {
   gap: 1.875rem;
 }
 
-.steps-buttons{
+.steps-buttons {
   display: none;
   align-items: center;
   justify-content: flex-end;
   height: 40px;
 }
 
-.steps-button-next,.steps-button-prev{
+.steps-button-next,
+.steps-button-prev {
   background: #5c8ee6;
   height: 100%;
   width: 60px;
@@ -317,6 +318,45 @@ body {
   margin-right: 1.25rem;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex-basis: 33%;
+  border: 1px solid rgba(235, 235, 240, 1);
+  position: relative;
+}
+
+.card-content {
+  padding: 2.5rem 3.125rem;
+}
+
+.card-title {
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 160%;
+  color: #292d33;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color:rgba(130, 138, 153, 1);
+  font-size: 1rem;
+  line-height: 160%;
+  margin-bottom: 24.625rem;
+}
+
+.card-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
 @media (max-width: 1810px) {
   html {
     font-size: 14px;
@@ -344,10 +384,9 @@ body {
   .header-phone {
     margin-left: 2rem;
   }
-  .slider-buttons{
+  .slider-buttons {
     display: flex;
   }
-  
 }
 
 @media (max-width: 1306px) {
@@ -476,7 +515,8 @@ body {
     margin-bottom: 1rem;
   }
 
-  .mobile-info-address,.mobile-info-email {
+  .mobile-info-address,
+  .mobile-info-email {
     text-decoration: none;
     font-style: normal;
     color: rgba(41, 45, 51, 1);
@@ -484,7 +524,7 @@ body {
     font-weight: 400;
     line-height: 160%;
   }
-  
+
   .close-menu .mobile-menu-line:nth-child(2) {
     display: none;
   }
@@ -494,37 +534,37 @@ body {
   .close-menu .mobile-menu-line:nth-child(3) {
     transform: rotate(135deg) translateY(16px);
   }
-  
 }
 /* Планшеты 768px - 992px */
 @media (max-width: 992px) and (min-width: 769px) {
   html {
     font-size: 12.5px; /* Меньше уменьшаем */
   }
-  
+
   .header-title {
     font-size: 4rem; /* Уменьшаем постепенно */
   }
-  
+
   .header-content {
     padding-top: 6rem;
   }
-  
-  .header-features { /* Разрешаем перенос */
+
+  .header-features {
+    /* Разрешаем перенос */
     margin-top: 3rem;
   }
-  
+
   .header-features-item {
     flex: 1 1 50%; /* 2 колонки */
     min-width: 50%;
     padding: 1.5rem 1rem;
   }
-  
+
   .header-features-item:nth-child(2n) {
     border-right: 1px solid rgba(235, 235, 240, 0.2);
   }
-  
-  .header-features-item:nth-child(2n+1) {
+
+  .header-features-item:nth-child(2n + 1) {
     border-right: none;
   }
 }
@@ -534,7 +574,7 @@ body {
   html {
     font-size: 12px;
   }
-  
+
   .container {
     max-width: 40rem;
     padding: 0 1.5rem;
@@ -548,29 +588,29 @@ body {
   .header-logo {
     padding: 1rem;
   }
-  
+
   .header {
     padding-top: 4rem;
     min-height: auto;
   }
-  
+
   .header-content {
     padding-top: 3rem;
   }
-  
+
   .header-title {
     font-size: 4rem;
   }
-  
+
   .header-text {
     margin-bottom: 2rem;
   }
-  
+
   .section {
     margin-top: 4rem;
     margin-bottom: 4rem;
   }
-  
+
   .section-title {
     font-size: 2.5rem;
     line-height: 3rem;
@@ -593,20 +633,18 @@ body {
   html {
     font-size: 11px;
   }
-  
+
   .container {
-    width: 90%;;
+    width: 90%;
   }
 
   .header-title {
     font-size: 2rem;
   }
-  
+
   .header-content {
     padding-top: 3rem;
   }
-  
-  
 }
 
 /* Очень маленькие телефоны */
@@ -614,7 +652,7 @@ body {
   .container {
     padding: 0 0.5rem;
   }
-  
+
   .mobile-menu {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
