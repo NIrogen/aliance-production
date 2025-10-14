@@ -380,7 +380,7 @@ body {
   color: #292d33;
   margin-top: 0;
   margin-bottom: 10px;
-  transition: colod 0.2s;
+  transition: color 0.2s;
 }
 
 .card-text {
@@ -411,6 +411,7 @@ body {
   position: relative;
   transition: border 0.2s;
   padding: 3.125rem;
+  transition: border 0.2s;
 }
 .mark-card-text{
   color:rgba(130, 138, 153, 1);
@@ -419,6 +420,38 @@ body {
 }
 .mark-card-info{
   margin-left: 3rem;
+}
+.mark-logo-ag{
+  fill: rgba(130, 138, 153, 1);
+  width: 180px;
+  height: auto;
+  transition: fill 0.2s;
+}
+.mark-logo-ap{
+  color: rgba(130, 138, 153, 1);
+  width: 180px;
+  height: auto;
+  transition: color 0.2s;
+}
+
+.mark-card-ag:hover .card-title{
+  color:#5c8ee6;
+}
+.mark-card-ag:hover .mark-logo-ag{
+  fill:#5c8ee6;
+}
+.mark-card-ag:hover{
+  border-color: #5c8ee6;
+}
+
+.mark-card:hover .card-title{
+  color:#5c8ee6;
+}
+.mark-card:hover .mark-logo-ap{
+  color:#5c8ee6;
+}
+.mark-card:hover{
+  border-color: #5c8ee6;
 }
 
 @media (max-width: 1810px) {
