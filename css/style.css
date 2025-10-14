@@ -423,13 +423,13 @@ body {
 }
 .mark-logo-ag{
   fill: rgba(130, 138, 153, 1);
-  width: 180px;
+  width: 11.25rem;
   height: auto;
   transition: fill 0.2s;
 }
 .mark-logo-ap{
   color: rgba(130, 138, 153, 1);
-  width: 180px;
+  width: 11.25rem;
   height: auto;
   transition: color 0.2s;
 }
@@ -716,6 +716,9 @@ body {
     line-height: 3rem;
   }
   .card{
+    flex-basis: 100%;
+  }
+  .mark-card{
     flex-basis: 100%;
   }
   /*
