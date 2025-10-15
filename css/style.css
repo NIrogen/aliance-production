@@ -398,7 +398,56 @@ body {
   z-index: 0;
 }
 
-
+.trademark-cards{
+  display: flex;
+  ;
+}
+.trademark-card{
+  flex-basis: 50%;
+  text-decoration: none;
+  border: 1px solid rgba(235, 235, 240, 1);
+  cursor: pointer;
+  transition: border 0.2s;
+  padding: 3.125rem; 
+  display: grid;
+  grid-template-columns: 180px 1fr ;
+  grid-template-rows: auto 2fr;
+  grid-column-gap: 3.125rem;
+  grid-template-areas: 
+  "logo title title"
+  "logo text text";
+}
+.trademark-card-logo{
+  width: 100%;
+  grid-area: logo;
+  fill: #828A99;
+}
+.trademark-card-title{
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #292d33;
+  margin: 0;
+  grid-area: title;
+}
+.trademark-card-text{
+  font-style: normal;
+  font-weight: 400;
+  font-style: 1rem;
+  line-height: 160%;
+  color: #828a99;
+  margin-top: .625rem;
+  grid-area: text;
+}
+.trademark-card:hover{
+  border-color: #5c8ee6;
+}
+.trademark-card:hover .trademark-card-logo{
+  fill:#5c8ee6;
+}
+.trademark-card:hover .trademark-card-title{
+  color:#5c8ee6;
+}
 
 @media (max-width: 1810px) {
   html {
@@ -451,6 +500,9 @@ body {
   }
   .card{
     flex-basis: 50%;
+  }
+  .trademark-card{
+    grid-template-columns: auto auto;
   }
 }
 
@@ -580,6 +632,10 @@ body {
   .close-menu .mobile-menu-line:nth-child(3) {
     transform: rotate(135deg) translateY(16px);
   }
+
+  .trademark-cards{
+    flex-direction: column;
+  }
 }
 /* Планшеты 768px - 992px */
 @media (max-width: 992px) and (min-width: 769px) {
@@ -694,6 +750,16 @@ body {
 
   .header-content {
     padding-top: 3rem;
+  }
+
+  .trademark-card{
+    grid-template-areas: 
+    "logo title"
+    "text text"
+    ;
+  }
+  .trademark-card-logo{
+    height: 70px;
   }
 }
 
