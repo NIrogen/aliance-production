@@ -327,7 +327,7 @@ body {
   margin-bottom: 1.25rem;
 }
 
-.steps-link {
+.button-link {
   display: flex;
   align-items: center;
   font-size: 1rem;
@@ -336,7 +336,7 @@ body {
   text-decoration: none;
 }
 
-.steps-link:before {
+.button-link:before {
   content: "";
   height: 1px;
   background-color: rgba(92, 142, 230, 1);
@@ -344,7 +344,7 @@ body {
   margin-right: 1.25rem;
   transition: width 0.2s;
 }
-.steps-link:hover::before{
+.button-link:hover::before{
   width: 60px;
 }
 
@@ -449,6 +449,31 @@ body {
   color:#5c8ee6;
 }
 
+.founder{
+ position: relative;
+}
+.founder-photo{
+  position: absolute;
+  left: 0;
+  width: 40%;
+  top:0;
+  min-height: 41.25rem;
+  object-fit: cover;
+}
+.founder-content{
+  max-width: 45rem;
+}
+.founder-content-wrapper{
+  display: flex;
+  justify-content: flex-end;
+}
+.founder-text{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color:#828a99;
+}
+
 @media (max-width: 1810px) {
   html {
     font-size: 14px;
@@ -503,6 +528,9 @@ body {
   }
   .trademark-card{
     grid-template-columns: auto auto;
+  }
+  .founder-content{
+    max-width: 35rem;
   }
 }
 
@@ -719,6 +747,11 @@ body {
   }
   .card{
     flex-basis: 100%;
+  }
+  .founder-photo{
+    position: relative;
+    width: 100%;
+    margin-bottom: 3.125rem;
   }
   
   /*
