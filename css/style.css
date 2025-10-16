@@ -451,13 +451,14 @@ body {
 
 .founder{
  position: relative;
+ min-height: 41.25rem;
 }
 .founder-photo{
   position: absolute;
   left: 0;
   width: 40%;
   top:0;
-  min-height: 41.25rem;
+  min-height: 100%;
   object-fit: cover;
 }
 .founder-content{
@@ -472,6 +473,27 @@ body {
   font-size: 1rem;
   line-height: 160%;
   color:#828a99;
+}
+
+.clients-wrapper{
+  display: flex;
+}
+.clients-content{
+  flex-basis: 50%;
+}
+.clients-list {
+  list-style-type: none;
+  padding: 0;
+  columns: 2 auto;
+}
+.clients-list-item{
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color:#292d33;
 }
 
 @media (max-width: 1810px) {
