@@ -279,8 +279,8 @@ body {
   height: 40px;
 }
 
-.steps-button-next,
-.steps-button-prev {
+.primary-button-next,
+.primary-button-prev {
   background: #5c8ee6;
   height: 100%;
   width: 60px;
