@@ -508,21 +508,17 @@ body {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  filter: grayscale(100%);
+  transition: filter 0.2s;
+}
+.client-logo-item:hover{
+  filter: grayscale(0%);
 }
 .clients-logo{
   width: 70px;
   height: 70px;
 }
-.client-logo-item-logo{
-  width: 70px;
-  height: 70px;
-  background-image: url('../img/client-gray.png');
-  background-size: cover;
-  transition: background-image 0.2s;
-}
-.client-logo-item:hover .client-logo-item-logo{
-  background-image: url('../img/client.png');
-}
+
 
 @media (max-width: 1810px) {
   html {
