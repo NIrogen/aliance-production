@@ -510,6 +510,7 @@ body {
   padding: 1rem;
   filter: grayscale(100%);
   transition: filter 0.2s;
+  text-decoration: none;
 }
 .client-logo-item:hover{
   filter: grayscale(0%);
