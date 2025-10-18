@@ -96,9 +96,21 @@ const swiper = new Swiper(".features-slider", {
 
 const swiperBlog = new Swiper(".blog-slider",{
   speed: 400,
-  slidesPerView: 2,
+  slidesPerView: 1,
+  spaceBetween: 30,
   navigation: {
     nextEl: ".blog-button-next",
     prevEl: ".blog-button-prev",
   },
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+    },
+    1306: {
+      slidesPerView: 2,
+    },
+    1590: {
+      slidesPerView: 2,
+    },
+  }
 });

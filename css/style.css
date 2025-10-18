@@ -272,25 +272,26 @@ body {
   gap: 1.875rem;
 }
 
-.steps-buttons {
-  display: none;
-}
 .primary-buttons-wrapper{
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  height: 40px;
+  height: 60px;
 }
 
 .primary-button-next,
 .primary-button-prev {
   background: #5c8ee6;
   height: 100%;
-  width: 60px;
+  width: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.steps-buttons {
+  display: none;
 }
 
 .steps-item {
@@ -552,6 +553,27 @@ body {
   object-fit: cover;
   z-index: -2;
 }
+.blog-card-title{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 160%;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.blog-card-text{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  margin: 0;
+}
+.blog-slider-footer{
+  display: flex;
+  align-items: center;
+  margin-top: 1.875rem;
+  justify-content: space-between;
+}
 
 @media (max-width: 1810px) {
   html {
@@ -598,6 +620,13 @@ body {
   .navbar-button {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+  .primary-buttons-wrapper{
+    height: 40px;
+  }
+  .slider-button-next,
+  .slider-button-prev{
+    width: 60px;
   }
   .steps-buttons {
     display: flex;
