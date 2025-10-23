@@ -717,6 +717,7 @@ body {
 .footer-seporator{
   color: #ebebf0;
   opacity: 0.5;
+  height: 1px;
 }
 .footer-bottom{
   display: flex;
@@ -758,6 +759,25 @@ body {
 }
 .footer-menu-wrapper:last-child{
   margin-left: 5rem;
+}
+.footer-wrapper{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  font-style: normal;
+  color:#828a99;
+}
+.footer-wrapper, .footer-legal{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+.footer-copyright, .footer-policy{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 160%;
+  color: inherit;
 }
 @media (max-width: 1810px) {
   html {
