@@ -737,6 +737,13 @@ body {
   padding-left: 1.25rem;
   list-style: none;
 }
+.footer-menu-list-w{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: none;
+}
 .footer-menu-column-2{
   columns: 20rem auto;
   min-width: 50rem;
@@ -779,6 +786,7 @@ body {
   line-height: 160%;
   color: inherit;
 }
+
 @media (max-width: 1810px) {
   html {
     font-size: 14px;
@@ -996,6 +1004,12 @@ body {
     flex-direction: column;
     align-items:start;
   }
+  .footer-menu-list-w{
+    padding: 0;
+  }
+  .footer-menu-list{
+    margin-bottom: .625rem;
+  }
   .footer-menu-link{
     display: inline;
   }
@@ -1003,7 +1017,13 @@ body {
     columns: 1;
   }
   .footer-menu-wrapper:last-child{
-  margin-left: 0;
+    margin-left: 0;
+  }
+  .footer-menu-title{
+    margin-bottom: .625rem;
+  }
+  .footer-menu-link-bold{
+    margin-bottom: .625rem;
   }
 }
 /* Планшеты 768px - 992px */
