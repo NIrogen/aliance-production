@@ -1092,6 +1092,7 @@ body {
   }
   .footer-menu-column-2{
     columns: 1;
+    min-width: auto;
   }
   .footer-menu-wrapper:last-child{
     margin-left: 0;
