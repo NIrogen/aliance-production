@@ -43,19 +43,22 @@ body {
 .navbar-button .button-icon {
   display: none;
 }
-
+.logo-dark {
+  display: none;
+}
 .navbar-light {
   color: rgba(41, 45, 51, 1);
   background-color: white;
   height: 4.625rem;
 }
-
+.navbar-light .logo-light{
+  display: none;
+}
+.navbar-light .logo-dark{
+  display: block;
+}
 .navbar-light .header-logo-path {
   fill: rgba(41, 45, 51, 1);
-}
-
-.logo {
-  display: none;
 }
 .logo-svg {
   width: 8.75rem;
