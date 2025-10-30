@@ -160,6 +160,55 @@ body {
   color: inherit;
 }
 
+.header-seporator{
+  padding-top: 94px;
+}
+
+.hor-seporator {
+  background-color: rgba(130, 138, 153, 1);
+  width: .875rem;
+  height: 1px;
+}
+.header-seporator-title{
+  font-family: "Bebas Neue Regular", sans-serif;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 6rem;
+  color: rgba(41, 45, 51, 1);
+}
+.header-seporator-crumbs{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.grey-text{
+  color:rgba(130, 138, 153, 1);
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.1875rem;
+}
+.dark-text{
+  color: rgba(41, 45, 51, 1);
+  font-family: Noto Sans;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.1875rem;
+}
+.header-seporator-title{
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.header-seporator-image{
+  margin-right: 2.5rem;
+}
+.header-seporator-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.header-seporator-section{
+  padding: 3.125rem 0;
+}
+
 .button {
   font-weight: 600;
   font-size: 1rem;
@@ -580,7 +629,6 @@ body {
 
 .bg-grey{
   background: #f0f2f5;
-
 }
 .section-cta{
   position: relative;
