@@ -186,6 +186,7 @@ body {
   font-size: .875rem;
   font-weight: 400;
   line-height: 1.1875rem;
+  margin: 0;
 }
 .dark-text{
   color: rgba(41, 45, 51, 1);
@@ -193,6 +194,7 @@ body {
   font-size: .875rem;
   font-weight: 400;
   line-height: 1.1875rem;
+  margin: 0;
 }
 .header-seporator-title{
   margin-top: 30px;
@@ -200,12 +202,16 @@ body {
 }
 .header-seporator-image{
   margin-right: 2.5rem;
+  position: absolute;
+  right: 170px;
+  bottom: 0;
 }
 .header-seporator-wrapper{
   display: flex;
   justify-content: space-between;
 }
 .header-seporator-section{
+  position: relative;
   padding: 3.125rem 0;
 }
 
