@@ -995,6 +995,9 @@ body {
   .cta-form-wrapper{
     justify-content: center;
   }
+  .header-seporator-image{
+    display: none;
+  }
 }
 
 @media (max-width: 1057px) {
