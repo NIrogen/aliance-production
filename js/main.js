@@ -140,3 +140,33 @@ document.addEventListener("keyup", (event) => {
     modal.classList.toggle("is-open");
   }
 });
+
+
+
+const forms = document.querySelectorAll("form"); // собираем все формы
+forms.forEach((form) => {
+  const validation = new JustValidate(form, {
+    errorFieldCssClass: 'is-invalid',
+  });
+  validation
+    .addField("[name=username]", [
+      {
+        rule: 'required',
+        errorMessage: "Укажите Имя"
+      },
+      {
+        rule: 'maxLength',
+        value: 30,
+        errorMessage: "максимально 30 символов"
+      },
+    ])
+    .addField('[name=userphone]', [
+      {
+        rule: 'required',
+        errorMessage: 'Укажите телефон',
+      },
+    ])
+    .onSuccess((event) => {
+      console.log('Validation passes and form submitted', event);
+    });
+});
