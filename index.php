@@ -1,3 +1,7 @@
+<?php
+// ОТКЛЮЧАЕМ CSP
+header_remove("Content-Security-Policy");
+?>
 <!DOCTYPE html>
 <html lang="ru">
 

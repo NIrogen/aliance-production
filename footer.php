@@ -14,6 +14,7 @@
                 class="input" 
                 name="username" 
                 placeholder=" "
+                autocomplete="name"
                 required
                 >
               <label class="input-group-label" for="user-name">Имя</label>
@@ -25,6 +26,7 @@
                 class="input" 
                 name="userphone" 
                 placeholder=" "
+                autocomplete="tel"
                 required
                 >
               <label class="input-group-label" for="user-phone">Номер телефона</label>
@@ -183,6 +185,7 @@
               name="username" 
               placeholder=" "
               required
+              autocomplete="name"
               >
             <label class="input-group-label modal-label" for="modal-user-name">Имя</label>
           </div>
@@ -194,6 +197,7 @@
               name="userphone"
               placeholder=" "
               required
+              autocomplete="tel"
               >
             <label class="input-group-label modal-label" for="modal-user-phone">Номер телефона</label>
           </div>
@@ -215,7 +219,7 @@
   </div>
 
   <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/just-validate.production.min.js"></script>
+  <!-- <script src="js/just-validate.production.min.js"></script> -->
   <script src="js/main.js"></script>
 </body>
 
