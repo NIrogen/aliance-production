@@ -167,6 +167,21 @@ forms.forEach((form) => {
       },
     ])
     .onSuccess((event) => {
-      console.log('Validation passes and form submitted', event);
+      const thisForm = event.target;//наша форма
+      const formData = new FormData(thisForm);// данные из нашей формы
+      const ajaxSend = (formData) => {
+        fetch(thisForm.getAttribute("action"), {
+          method: thisForm.getAttribute("method"),
+          body: formData,
+        }).then((response) => {
+          if (response.ok) {
+            thisForm.reset();
+            alert("форма отправлена!");
+          } else{
+            alert(response.statusText);
+          }
+        });
+      };
+      ajaxSend(formData);
     });
 });
