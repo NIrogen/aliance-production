@@ -5,6 +5,8 @@ const mMenuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
 const isFront = document.body.classList.contains("front-page");
 
+console.log("hello");
+
 const lightModeOn = (event) => {
   navbar.classList.add("navbar-light");
 };
@@ -121,6 +123,7 @@ const swiperBlog = new Swiper(".blog-slider",{
 
 
 
+
 const modal = document.querySelector(".modal");
 const modalDialog = document.querySelector(".modal-dialog");
 
@@ -142,128 +145,46 @@ document.addEventListener("keyup", (event) => {
 });
 
 
-console.log('🔍 Инициализация валидации...');
 
-document.addEventListener('DOMContentLoaded', function() {
-    const forms = document.querySelectorAll("form");
-    console.log('📝 Найдено форм:', forms.length);
-
-    forms.forEach((form) => {
-        form.setAttribute('novalidate', true);
-        
-        const nameField = form.querySelector('[name="username"]');
-        const phoneField = form.querySelector('[name="userphone"]');
-        
-        if (!nameField || !phoneField) {
-            console.log('❌ Не найдены поля формы');
-            return;
-        }
-
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            console.log('📤 Проверяем форму...');
-            
-            let isValid = true;
-
-            // Валидация имени
-            if (!nameField.value.trim()) {
-                showError(nameField, 'Укажите имя');
-                isValid = false;
-            } else if (nameField.value.length > 30) {
-                showError(nameField, 'Максимум 30 символов');
-                isValid = false;
-            } else {
-                hideError(nameField);
-            }
-
-            // Валидация телефона
-            if (!phoneField.value.trim()) {
-                showError(phoneField, 'Укажите телефон');
-                isValid = false;
-            } else {
-                hideError(phoneField);
-            }
-
-            if (isValid) {
-                console.log('✅ Форма валидна, отправляем...');
-                this.submit();
-            }
+const forms = document.querySelectorAll("form"); // собираем все формы
+forms.forEach((form) => {
+  const validation = new JustValidate(form, {
+    errorFieldCssClass: 'is-invalid',
+  });
+  validation
+    .addField("[name=username]", [
+      {
+        rule: 'required',
+        errorMessage: "Укажите Имя"
+      },
+      {
+        rule: 'maxLength',
+        value: 30,
+        errorMessage: "максимально 30 символов"
+      },
+    ])
+    .addField('[name=userphone]', [
+      {
+        rule: 'required',
+        errorMessage: 'Укажите телефон',
+      },
+    ])
+    .onSuccess((event) => {
+      const thisForm = event.target;//наша форма
+      const formData = new FormData(thisForm);// данные из нашей формы
+      const ajaxSend = (formData) => {
+        fetch(thisForm.getAttribute("action"), {
+          method: thisForm.getAttribute("method"),
+          body: formData,
+        }).then((response) => {
+          if (response.ok) {
+            thisForm.reset();
+            alert("форма отправлена!");
+          } else{
+            alert(response.statusText);
+          }
         });
-
-        // Очистка ошибок при вводе
-        [nameField, phoneField].forEach(field => {
-            field.addEventListener('input', function() {
-                if (this.value.trim()) {
-                    hideError(this);
-                }
-            });
-        });
+      };
+      ajaxSend(formData);
     });
 });
-
-function showError(field, message) {
-    field.classList.add('is-invalid');
-    
-    let errorElement = field.parentNode.querySelector('.error-message');
-    if (!errorElement) {
-        errorElement = document.createElement('div');
-        errorElement.className = 'error-message';
-        field.parentNode.appendChild(errorElement);
-    }
-    errorElement.textContent = message;
-    errorElement.style.color = 'red';
-    errorElement.style.fontSize = '14px';
-    errorElement.style.marginTop = '5px';
-}
-
-function hideError(field) {
-    field.classList.remove('is-invalid');
-    const errorElement = field.parentNode.querySelector('.error-message');
-    if (errorElement) {
-        errorElement.remove();
-    }
-}
-
-
-// const forms = document.querySelectorAll("form"); // собираем все формы
-// forms.forEach((form) => {
-//   const validation = new JustValidate(form, {
-//     errorFieldCssClass: 'is-invalid',
-//   });
-//   validation
-//     .addField("[name=username]", [
-//       {
-//         rule: 'required',
-//         errorMessage: "Укажите Имя"
-//       },
-//       {
-//         rule: 'maxLength',
-//         value: 30,
-//         errorMessage: "максимально 30 символов"
-//       },
-//     ])
-//     .addField('[name=userphone]', [
-//       {
-//         rule: 'required',
-//         errorMessage: 'Укажите телефон',
-//       },
-//     ])
-//     .onSuccess((event) => {
-//       const thisForm = event.target;//наша форма
-//       const formData = new FormData(thisForm);// данные из нашей формы
-//       const ajaxSend = (formData) => {
-//         fetch(thisForm.getAttribute("action"), {
-//           method: thisForm.getAttribute("method"),
-//           body: formData,
-//         }).then((response) => {
-//           if (response.ok) {
-//             thisForm.reset();
-//             alert("форма отправлена!");
-//           } else{
-//             alert(response.statusText);
-//           }
-//         });
-//       };
-//       ajaxSend(formData);
-//     });
-// });

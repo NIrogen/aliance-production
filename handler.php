@@ -1,4 +1,4 @@
-<?php
+<?php 
 $user_name = htmlspecialchars($_POST["username"]);
 $user_phone = htmlspecialchars($_POST["userphone"]);
 
