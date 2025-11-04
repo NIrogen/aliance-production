@@ -885,6 +885,7 @@ body {
   transform: translateY(0);
 }
 .modal-dialog{
+  display: none;
   background-color: #fff;
   margin: auto;
   max-width: 28.75rem;
@@ -892,6 +893,9 @@ body {
   position: relative;
   transform: translateY(-20%);
   transition: tranform 0.3s;
+}
+.modal-dialog.is-open{
+  display: block;
 }
 .modal-close{
   display: block;
@@ -933,6 +937,31 @@ body {
   display: block;
   width: 100%;
   margin-bottom: 1.5rem;
+}
+
+.modal-dialog-complete{
+  display: none;
+  background-color: #fff;
+  margin: auto;
+  max-width: 28.75rem;
+  padding: 2.5rem 3.125rem;
+  position: relative;
+  transform: translateY(-20%);
+  transition: tranform 0.3s;
+}
+.complete-button{
+  display: block;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  padding: auto;
+}
+.complete-img{
+  width: 18.75rem;
+  height: 18.75rem;
+}
+.modal-dialog-complete.is-open{
+  display: block;
 }
 
 @media (max-width: 1810px) {

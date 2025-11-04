@@ -217,15 +217,8 @@
       </form>
     </div>
   </div>
-  <div class="modal modal-complete">
-    <a href="" class="modal-close" data-toggle="modal">
-      <svg class="close-icon" width="24" height="24">
-        <use href="img/sprite.svg#close"></use>
-      </svg>
-    </a>
-    
-  </div>
-
+  
+  <script src="js/main.js?v=<?= time() ?>"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/just-validate.production.min.js"></script>
   <script src="js/main.js"></script>

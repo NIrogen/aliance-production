@@ -5,6 +5,7 @@ const mMenuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
 const isFront = document.body.classList.contains("front-page");
 
+
 console.log("hello");
 
 const lightModeOn = (event) => {
@@ -188,3 +189,7 @@ forms.forEach((form) => {
       ajaxSend(formData);
     });
 });
+
+
+
+
