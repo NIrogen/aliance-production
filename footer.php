@@ -23,7 +23,7 @@
               <input 
                 id="user-phone" 
                 type="tel" 
-                class="input" 
+                class="input phone-mask" 
                 name="userphone" 
                 placeholder=" "
                 autocomplete="tel"
@@ -193,7 +193,7 @@
             <input 
               id="modal-user-phone" 
               type="tel" 
-              class="input modal-input" 
+              class="input modal-input phone-mask" 
               name="userphone"
               placeholder=" "
               required
@@ -218,9 +218,10 @@
     </div>
   </div>
   
-  <script src="js/main.js?v=<?= time() ?>"></script>
+  
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/just-validate.production.min.js"></script>
+  <script src="js/main.js?v=<?= time() ?>"></script>
   <script src="js/main.js"></script>
 </body>
 
