@@ -169,6 +169,25 @@ body {
   width: .875rem;
   height: 1px;
 }
+.header-seporator-img{
+  background-image: url(../img/header-bg.png);
+  background-size: cover;
+  background-repeat: no-repet;
+  background-position: center;
+  position: relative;
+  color: #fff;
+}
+.header-seporator-img::before{
+  content: "";
+  left: 0;
+  top: 0;
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 45, 51, 0.6);
+  z-index: 0;
+}
 .header-seporator-title{
   font-family: "Bebas Neue Regular", sans-serif;
   font-size: 5rem;
