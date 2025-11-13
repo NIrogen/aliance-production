@@ -188,6 +188,9 @@ body {
   background-color: rgba(41, 45, 51, 0.6);
   z-index: 0;
 }
+.header-seporator-img .header-seporator-title .header-seporator-crumbs .grey-text .dark-text{
+  color:white;
+}
 .header-seporator-title{
   font-family: "Bebas Neue Regular", sans-serif;
   font-size: 5rem;
